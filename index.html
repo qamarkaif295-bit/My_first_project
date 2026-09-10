@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Qamar Kaif | DevOps Engineer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+
+/* Login */
+
+#login{
+
+width:350px;
+margin:120px auto;
+background:white;
+padding:30px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 20px gray;
+
+}
+
+input{
+
+width:90%;
+padding:12px;
+margin:15px;
+
+}
+
+button{
+
+background:#0066ff;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+
+/* Website */
+
+#website{
+display:none;
+}
+
+
+header{
+
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:50px;
+
+}
+
+
+section{
+
+background:white;
+margin:20px;
+padding:25px;
+border-radius:10px;
+
+}
+
+
+.tools{
+
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+
+}
+
+
+.tool{
+
+background:#0066ff;
+color:white;
+padding:15px;
+border-radius:8px;
+
+}
+
+
+.skill li{
+
+margin:10px;
+
+}
+
+
+footer{
+
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Gmail Login -->
+
+<div id="login">
+
+<h2>Qamar Kaif</h2>
+
+<p>Login with Gmail</p>
+
+<input id="gmail" type="email" placeholder="Enter Gmail">
+
+<br>
+
+<button onclick="login()">
+Login
+</button>
+
+</div>
+
+
+
+<!-- Portfolio Website -->
+
+<div id="website">
+
+
+<header>
+
+<h1>Qamar Kaif</h1>
+
+<h2>DevOps Engineer</h2>
+
+<p>
+Cloud | Automation | CI/CD | Linux
+</p>
+
+</header>
+
+
+
+<section>
+
+<h2>About Me</h2>
+
+<p>
+
+I am Qamar Kaif, a DevOps Engineer passionate about
+automation, cloud infrastructure and modern software
+deployment practices.
+
+</p>
+
+</section>
+
+
+
+<section>
+
+<h2>DevOps Tools</h2>
+
+
+<div class="tools">
+
+<div class="tool">Linux</div>
+<div class="tool">Git</div>
+<div class="tool">GitHub</div>
+<div class="tool">Docker</div>
+<div class="tool">Kubernetes</div>
+<div class="tool">AWS</div>
+<div class="tool">Jenkins</div>
+<div class="tool">Terraform</div>
+<div class="tool">Bash</div>
+<div class="tool">Python</div>
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>DevOps Skills</h2>
+
+<ul class="skill">
+
+<li>Linux Administration</li>
+
+<li>Cloud Computing (AWS)</li>
+
+<li>CI/CD Pipeline</li>
+
+<li>Docker Containerization</li>
+
+<li>Kubernetes Orchestration</li>
+
+<li>Infrastructure as Code</li>
+
+<li>Git Version Control</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+<section>
+
+<h2>Projects</h2>
+
+
+<p>
+✔ AWS EC2 Website Deployment
+</p>
+
+<p>
+✔ Linux Automation Scripts
+</p>
+
+<p>
+✔ GitHub CI/CD Projects
+</p>
+
+
+</section>
+
+
+
+<section>
+
+<h2>Contact</h2>
+
+<p>
+Email: qamarkaif@example.com
+</p>
+
+
+</section>
+
+
+
+<footer>
+
+© 2026 Qamar Kaif | DevOps Engineer
+
+</footer>
+
+
+</div>
+
+
+
+
+<script>
+
+
+function login(){
+
+let email=document.getElementById("gmail").value;
+
+
+if(email.includes("@gmail.com")){
+
+
+document.getElementById("login").style.display="none";
+
+document.getElementById("website").style.display="block";
+
+
+}
+
+else{
+
+
+alert("Enter valid Gmail address");
+
+
+}
+
+
+}
+
+
+</script>
+
+
+</body>
+</html>
